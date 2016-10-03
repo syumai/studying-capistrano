@@ -1,0 +1,25 @@
+{
+  "name": "studying-capistrano",
+  "version": "0.1.0",
+  "description": "Studying Capistrano with Node.js Sample",
+  "main": "server.js",
+  "scripts": {
+    "start": "forever start forever/config.json",
+    "restart": "forever restart sample",
+    "stop": "forever stop sample",
+	"check": "forever list | grep sample | wc -l"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syumai/studying-capistrano.git"
+  },
+  "author": "syumai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ducklings/studying-capistrano/issues"
+  },
+  "homepage": "https://github.com/ducklings/studying-capistrano#readme",
+  "dependencies": {
+    "forever": "^0.15.2"
+  }
+}
